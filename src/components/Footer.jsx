@@ -38,7 +38,7 @@ function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2 text-gray-400">
-              <p>contact@holysmokas.com</p>
+              <p>contact@milanilabs.com</p>
               <p>(415) 691 - 7085</p>
             </div>
           </div>

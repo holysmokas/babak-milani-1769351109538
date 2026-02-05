@@ -14,7 +14,7 @@ function Hero() {
             Babak Milani
           </span>
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500 animate-slide-up" style={{ animationDelay: '200ms' }}>
-            Full-Stack Developer
+            Application Architect
           </span>
         </h1>
 

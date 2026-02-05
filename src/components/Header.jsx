@@ -25,7 +25,7 @@ function Header() {
 
           <div className="hidden md:flex items-center gap-6">
             <a href="#hero" className="text-gray-700 hover:text-blue-600 transition">Home</a>
-            <a href="#features" className="text-gray-700 hover:text-blue-600 transition">Services</a>
+            <a href="#projects" className="text-gray-700 hover:text-blue-600 transition">Projects</a>
             <a href="#contact" className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Contact</a>
           </div>
 

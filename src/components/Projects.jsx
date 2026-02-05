@@ -9,7 +9,7 @@ function Projects() {
             title: 'Alimi.ai',
             subtitle: 'AI-Powered Website Generation Platform',
             url: 'https://alimi.ai',
-            role: 'Application Architect & Founder',
+            role: 'Full-Stack Developer',
             description: 'End-to-end SaaS platform that generates complete, production-ready websites for small businesses using AI. Customers select a package, provide business details, and receive a fully deployed website with custom domain, SSL, and working contact forms—all automated.',
             highlights: [
                 'Integrated Claude AI API to dynamically generate React + Vite codebases tailored to three distinct package tiers',
@@ -29,7 +29,7 @@ function Projects() {
             title: 'Mamnoon.ai',
             subtitle: 'Cross-Platform Mobile Video Calling with Real-Time Translation',
             url: 'https://mamnoon.ai',
-            role: 'Application Architect & Founder',
+            role: 'Full-Stack Developer',
             description: 'Cross-platform mobile video calling application with real-time speech translation, serving users across iOS, Android, and web.',
             highlights: [
                 'Built production React Native application from scratch, deploying to iOS App Store and Google Play Store',
@@ -50,7 +50,7 @@ function Projects() {
             title: 'CSV Cleaner',
             subtitle: 'Privacy-First Email List Cleaning SaaS',
             url: 'https://csvcleaner.online',
-            role: 'Founder & Developer',
+            role: 'Full-Stack Developer',
             description: 'Pay-per-use SaaS product that helps marketers clean and deduplicate email lists with a privacy-first architecture.',
             highlights: [
                 'Built privacy-first architecture where user data never touches the server, ensuring GDPR compliance',
@@ -69,7 +69,7 @@ function Projects() {
             title: 'Centrix.Email',
             subtitle: 'SaaS Email Marketing Platform',
             url: 'https://centrix.email',
-            role: 'Application Architect & Founder',
+            role: 'Full-Stack Developer',
             description: 'Production-ready email marketing SaaS application with a pay-per-send business model, eliminating traditional monthly subscription fees.',
             highlights: [
                 'Built serverless architecture using AWS Lambda (Node.js), API Gateway, and DynamoDB',

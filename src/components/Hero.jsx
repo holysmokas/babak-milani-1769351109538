@@ -14,13 +14,13 @@ function Hero() {
             Babak Milani
           </span>
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500 animate-slide-up" style={{ animationDelay: '200ms' }}>
-            Application Architect
+            Full-Stack Developer
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-xl sm:text-2xl text-gray-400 max-w-2xl leading-relaxed mb-8 animate-slide-up" style={{ animationDelay: '300ms' }}>
-          Technical founder building production-ready SaaS platforms from concept to deployment. Specialized in AI integration, payment processing, and end-to-end automation.
+          Building production-ready SaaS platforms from concept to deployment. Specialized in AI integration, cloud infrastructure, payment processing, and end-to-end automation.
         </p>
 
         {/* Contact info */}

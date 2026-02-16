@@ -39,7 +39,7 @@ function Contact() {
 
             {/* Phone */}
             <a
-              href="tel:+16464109559"
+              href="tel:+14156917085"
               className="group flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-cyan-500/30 hover:bg-cyan-500/5 transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform duration-300">

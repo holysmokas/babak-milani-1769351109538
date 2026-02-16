@@ -49,7 +49,7 @@ function Contact() {
               </div>
               <div>
                 <p className="text-sm text-gray-500 mb-1">Phone</p>
-                <p className="text-white font-medium group-hover:text-cyan-400 transition-colors">(646) 410-9559</p>
+                <p className="text-white font-medium group-hover:text-cyan-400 transition-colors">(415) 691-7085</p>
               </div>
             </a>
 

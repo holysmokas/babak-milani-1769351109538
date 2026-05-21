@@ -88,7 +88,6 @@ function Skills() {
     return (
         <section id="skills" className="py-24 px-6">
             <div className="max-w-6xl mx-auto">
-                {/* Section header */}
                 <div className="text-center mb-16">
                     <span className="inline-block px-3 py-1 text-sm text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-4">
                         Technical Expertise
@@ -101,7 +100,6 @@ function Skills() {
                     </p>
                 </div>
 
-                {/* Skills grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {skillCategories.map((category, index) => {
                         const colors = colorClasses[category.color]

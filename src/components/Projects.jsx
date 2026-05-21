@@ -97,7 +97,6 @@ function Projects() {
     return (
         <section id="projects" className="py-24 px-6">
             <div className="max-w-6xl mx-auto">
-                {/* Section header */}
                 <div className="text-center mb-16">
                     <span className="inline-block px-3 py-1 text-sm text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-4">
                         Portfolio
@@ -110,7 +109,6 @@ function Projects() {
                     </p>
                 </div>
 
-                {/* Projects list */}
                 <div className="space-y-8">
                     {projects.map((project, index) => (
                         <a
@@ -123,21 +121,16 @@ function Projects() {
                             onMouseLeave={() => setHoveredProject(null)}
                             style={{ animationDelay: `${index * 150}ms` }}
                         >
-                            {/* Card */}
                             <div className={`relative p-8 rounded-3xl bg-white/[0.02] border border-white/5 overflow-hidden transition-all duration-500 ease-out
                 ${hoveredProject === project.id ? `border-white/20 ${glowStyles[project.glowColor]} scale-[1.02]` : 'hover:border-white/10'}
               `}>
-
-                                {/* Animated background pattern on hover */}
                                 <div
                                     className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
                                     style={{ background: project.pattern }}
                                 />
 
-                                {/* Gradient accent line - animates on hover */}
                                 <div className={`absolute top-0 left-0 h-1 bg-gradient-to-r ${project.gradient} transition-all duration-500 ease-out ${hoveredProject === project.id ? 'w-full' : 'w-0'}`} />
 
-                                {/* Floating particles effect on hover */}
                                 <div className={`absolute inset-0 overflow-hidden pointer-events-none transition-opacity duration-500 ${hoveredProject === project.id ? 'opacity-100' : 'opacity-0'}`}>
                                     {[...Array(6)].map((_, i) => (
                                         <div
@@ -153,13 +146,10 @@ function Projects() {
                                     ))}
                                 </div>
 
-                                {/* Content */}
                                 <div className="relative">
-                                    {/* Header */}
                                     <div className="flex flex-col sm:flex-row sm:items-start gap-4 mb-6">
                                         <div className={`relative w-14 h-14 rounded-2xl bg-gradient-to-br ${project.gradient} flex items-center justify-center text-2xl flex-shrink-0 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3`}>
                                             {project.icon}
-                                            {/* Pulse ring on hover */}
                                             <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-50 group-hover:animate-ping`} />
                                         </div>
                                         <div className="flex-1">
@@ -170,8 +160,6 @@ function Projects() {
                                                 <span className="px-2 py-0.5 text-xs font-medium bg-white/5 border border-white/10 rounded-full text-gray-400 group-hover:border-white/20 transition-colors">
                                                     {project.role}
                                                 </span>
-
-                                                {/* Live badge - appears on hover */}
                                                 <span className={`flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium rounded-full transition-all duration-300 ${hoveredProject === project.id ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}`}
                                                     style={{ background: `linear-gradient(135deg, ${project.glowColor === 'emerald' ? 'rgba(52,211,153,0.2)' : project.glowColor === 'violet' ? 'rgba(139,92,246,0.2)' : project.glowColor === 'cyan' ? 'rgba(34,211,238,0.2)' : 'rgba(249,115,22,0.2)'}, transparent)` }}
                                                 >
@@ -184,7 +172,6 @@ function Projects() {
                                             </p>
                                         </div>
 
-                                        {/* Visit arrow - prominent on hover */}
                                         <div className={`hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl transition-all duration-500 ${hoveredProject === project.id ? 'opacity-100 translate-x-0 bg-white/10' : 'opacity-0 translate-x-8'}`}>
                                             <span className="text-sm font-medium text-white">Visit Project</span>
                                             <svg className="w-5 h-5 text-white transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -193,12 +180,10 @@ function Projects() {
                                         </div>
                                     </div>
 
-                                    {/* Description */}
                                     <p className="text-gray-400 mb-6 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
                                         {project.description}
                                     </p>
 
-                                    {/* Highlights - with staggered reveal on hover */}
                                     <div className="mb-6">
                                         <h4 className="text-sm font-semibold text-white/60 uppercase tracking-wider mb-3">Key Achievements</h4>
                                         <ul className="space-y-2">
@@ -228,7 +213,6 @@ function Projects() {
                                         </ul>
                                     </div>
 
-                                    {/* Tech Stack with hover effects */}
                                     <div>
                                         <h4 className="text-sm font-semibold text-white/60 uppercase tracking-wider mb-3">Tech Stack</h4>
                                         <div className="flex flex-wrap gap-2">
@@ -246,7 +230,6 @@ function Projects() {
                                         </div>
                                     </div>
 
-                                    {/* Mobile CTA */}
                                     <div className={`sm:hidden mt-6 flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-to-r ${project.gradient} text-[#0a0a0f] font-semibold transition-all duration-300`}>
                                         <span>Visit Project</span>
                                         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -255,7 +238,6 @@ function Projects() {
                                     </div>
                                 </div>
 
-                                {/* Corner accent */}
                                 <div className={`absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-tl ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-tl-full`} />
                             </div>
                         </a>

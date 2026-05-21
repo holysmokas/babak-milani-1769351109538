@@ -37,7 +37,7 @@ function Footer() {
             <div className="flex flex-wrap gap-3 mb-4">
               {/* TODO: Replace with your actual GitHub URL */}
               <a
-                href="https://github.com/your-github-username"
+                href="https://github.com/holysmokas"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -49,7 +49,7 @@ function Footer() {
               </a>
               {/* TODO: Replace with your actual LinkedIn URL */}
               <a
-                href="https://www.linkedin.com/in/your-linkedin-username"
+                href="https://www.linkedin.com/in/babakmilani"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"

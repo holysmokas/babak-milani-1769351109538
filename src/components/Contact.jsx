@@ -55,7 +55,7 @@ function Contact() {
 
             {/* GitHub — TODO: replace href with your actual GitHub URL */}
             <a
-              href="https://github.com/your-github-username"
+              href="https://github.com/holysmokas"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-white/20 hover:bg-white/5 transition-all duration-300"
@@ -73,7 +73,7 @@ function Contact() {
 
             {/* LinkedIn — TODO: replace href with your actual LinkedIn URL */}
             <a
-              href="https://www.linkedin.com/in/your-linkedin-username"
+              href="https://www.linkedin.com/in/babakmilani"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-blue-500/30 hover:bg-blue-500/5 transition-all duration-300"

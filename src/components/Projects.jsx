@@ -5,6 +5,27 @@ function Projects() {
 
     const projects = [
         {
+            id: 'aimepost',
+            title: 'AIME Post',
+            subtitle: 'Multi-Tenant Social Media Automation SaaS',
+            url: 'https://aimepost.com',
+            role: 'Full-Stack Developer',
+            description: 'Production multi-tenant SaaS platform for social media automation. Handles OAuth-managed account authorization across six major platforms with scheduled distribution, server-side video composition, and real-time analytics.',
+            highlights: [
+                'Architected multi-tenant SaaS infrastructure handling OAuth flows across six social platforms (Instagram, TikTok, LinkedIn, Twitter, Pinterest, YouTube)',
+                'Built server-side video composition and media processing pipeline for scheduled post delivery',
+                'Implemented real-time scheduling system with cron-based execution and webhook notifications',
+                'Designed secure multi-tenant data isolation with per-user API rate limiting and quota management',
+                'Created admin dashboard for analytics, user management, and subscription lifecycle handling',
+                'Deployed across Cloudflare Workers and serverless infrastructure with zero-downtime updates',
+            ],
+            techStack: ['React', 'Node.js', 'Cloudflare Workers', 'D1', 'R2', 'BetterAuth', 'Stripe', 'OAuth 2.0', 'API integrations', 'cron-jobs.org'],
+            gradient: 'from-blue-500 to-indigo-500',
+            glowColor: 'blue',
+            icon: '📱',
+            pattern: 'radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 50%)',
+        },
+        {
             id: 'alimi',
             title: 'Alimi.ai',
             subtitle: 'AI-Powered Website Generation Platform',
@@ -25,10 +46,10 @@ function Projects() {
             pattern: 'radial-gradient(circle at 20% 80%, rgba(52, 211, 153, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(34, 211, 238, 0.15) 0%, transparent 50%)',
         },
         {
-            id: 'mamnoon',
-            title: 'Mamnoon.ai',
-            subtitle: 'Cross-Platform Mobile Video Calling with Real-Time Translation',
-            url: 'https://mamnoon.ai',
+            id: 'baleh',
+            title: 'Baleh.ai',
+            subtitle: 'Real-Time Translation Video Calling + CRM/Booking Platform',
+            url: 'https://baleh.ai',
             role: 'Full-Stack Developer',
             description: 'Cross-platform mobile video calling application with real-time speech translation, serving users across iOS, Android, and web.',
             highlights: [
@@ -44,6 +65,27 @@ function Projects() {
             glowColor: 'violet',
             icon: '🌍',
             pattern: 'radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 50%), radial-gradient(circle at 20% 20%, rgba(168, 85, 247, 0.15) 0%, transparent 50%)',
+        },
+        {
+            id: 'marketflare',
+            title: 'Marketflare',
+            subtitle: 'Automated Trading Signal Platform with Pattern Recognition',
+            url: 'https://marketflare.trade',
+            role: 'Full-Stack Developer',
+            description: 'Systematic trading platform that scans equity markets hourly, extracts chart patterns algorithmically, and surfaces high-probability trade setups with risk management built in.',
+            highlights: [
+                'Built hourly market scanner for Russell 2000 universe with real-time data ingestion and pattern detection',
+                'Developed proprietary chart pattern recognition algorithm using technical analysis (support/resistance, breakouts, reversals)',
+                'Integrated Schwab Trader API for order placement and account management with production-grade error handling',
+                'Implemented backtesting framework with transaction cost modeling, slippage simulation, and position sizing constraints',
+                'Created real-time dashboard displaying trade signals, historical performance, and execution metrics',
+                'Engineered data pipeline handling market data normalization, deduplication, and archive management',
+            ],
+            techStack: ['Python', 'React', 'Node.js', 'PostgreSQL', 'Schwab API', 'Pandas', 'NumPy', 'Technical Analysis', 'Cloudflare Workers', 'Cloud Run'],
+            gradient: 'from-amber-500 to-orange-500',
+            glowColor: 'amber',
+            icon: '📈',
+            pattern: 'radial-gradient(circle at 30% 70%, rgba(217, 119, 6, 0.15) 0%, transparent 50%), radial-gradient(circle at 70% 30%, rgba(234, 88, 12, 0.15) 0%, transparent 50%)',
         },
         {
             id: 'csvleaner',
@@ -79,7 +121,7 @@ function Projects() {
                 'Built campaign composer with professional templates, CSV upload validation, and open/click tracking',
                 'Configured AWS Cognito authentication with email verification and secure session management',
             ],
-            techStack: ['React', 'Node.js', 'AWS Lambda', 'DynamoDB', 'S3', 'Cognito', 'API Gateway', 'Stripe', 'Resend', 'Cloudflare'],
+            techStack: ['React', 'Cloudflare Workers', 'BetterAuth', 'Stripe', 'Resend', 'cron-jobs.org', 'DynamoDB'],
             gradient: 'from-orange-500 to-red-500',
             glowColor: 'orange',
             icon: '📧',
@@ -88,10 +130,12 @@ function Projects() {
     ]
 
     const glowStyles = {
+        blue: 'shadow-[0_0_80px_-20px_rgba(59,130,246,0.5)]',
         emerald: 'shadow-[0_0_80px_-20px_rgba(52,211,153,0.5)]',
         violet: 'shadow-[0_0_80px_-20px_rgba(139,92,246,0.5)]',
         cyan: 'shadow-[0_0_80px_-20px_rgba(34,211,238,0.5)]',
         orange: 'shadow-[0_0_80px_-20px_rgba(249,115,22,0.5)]',
+        amber: 'shadow-[0_0_80px_-20px_rgba(217,119,6,0.5)]',
     }
 
     return (
@@ -161,7 +205,7 @@ function Projects() {
                                                     {project.role}
                                                 </span>
                                                 <span className={`flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium rounded-full transition-all duration-300 ${hoveredProject === project.id ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'}`}
-                                                    style={{ background: `linear-gradient(135deg, ${project.glowColor === 'emerald' ? 'rgba(52,211,153,0.2)' : project.glowColor === 'violet' ? 'rgba(139,92,246,0.2)' : project.glowColor === 'cyan' ? 'rgba(34,211,238,0.2)' : 'rgba(249,115,22,0.2)'}, transparent)` }}
+                                                    style={{ background: `linear-gradient(135deg, ${project.glowColor === 'emerald' ? 'rgba(52,211,153,0.2)' : project.glowColor === 'violet' ? 'rgba(139,92,246,0.2)' : project.glowColor === 'cyan' ? 'rgba(34,211,238,0.2)' : project.glowColor === 'orange' ? 'rgba(249,115,22,0.2)' : project.glowColor === 'blue' ? 'rgba(59,130,246,0.2)' : 'rgba(217,119,6,0.2)'}, transparent)` }}
                                                 >
                                                     <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
                                                     <span className="text-green-400">Live</span>
@@ -198,7 +242,7 @@ function Projects() {
                                                     <svg
                                                         className={`w-4 h-4 mt-0.5 flex-shrink-0 transition-all duration-300`}
                                                         style={{
-                                                            color: project.glowColor === 'emerald' ? '#34d399' : project.glowColor === 'violet' ? '#a78bfa' : project.glowColor === 'cyan' ? '#22d3ee' : '#fb923c',
+                                                            color: project.glowColor === 'emerald' ? '#34d399' : project.glowColor === 'violet' ? '#a78bfa' : project.glowColor === 'cyan' ? '#22d3ee' : project.glowColor === 'orange' ? '#fb923c' : project.glowColor === 'blue' ? '#3b82f6' : '#d97706',
                                                             transform: hoveredProject === project.id ? 'scale(1.1)' : 'scale(1)',
                                                             transitionDelay: `${i * 50}ms`,
                                                         }}
